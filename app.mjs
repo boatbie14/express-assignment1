@@ -10,7 +10,7 @@ const profileData = {
 };
 
 app.get("/profiles", (req, res) => {
-  return res.json(profileData);
+  return res.status(201).json(profileData);
 });
 
 app.listen(port, () => {
